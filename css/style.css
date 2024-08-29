@@ -310,7 +310,7 @@ body {
   font-weight: 400;
   color: #333;
   line-height: 2rem;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 10px;
   /* 스크롤 생성 */
   max-height: 450px;
@@ -319,13 +319,14 @@ body {
   /* 영역을 숨김 */
   visibility: hidden;
   opacity: 0;
-  top: 50px;
+  /* top: 50px; */
   transition: all 0.3s;
 
 }
 .submenu_focus{
   visibility: visible;
   opacity: 1;
+  /* top: 65px; */
 }
 .submenu > li {
   position: relative;
@@ -430,16 +431,15 @@ body {
 .search-bt {
   display: block;
   font-size: 2.4rem;
+  line-height: 24px;
   color: #333;
   font-weight: bold;
   width: 24px;
-  height: 24px;
+ 
   margin-bottom: 3px;
   background-color: #ec008c;
 }
-.search-bt i {
-  /* vertical-align: 5px; */
-}
+
 /* 서브메뉴에 호버했을때 바탕화면 */
 .header-dim {
   display: none;
@@ -451,3 +451,40 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 99999;
 }
+/* top scroll class add */
+/* 상단 스크롤시 class추가 */
+.h-fix{
+  position: fixed;
+  top: -141px;
+  left: 0;
+  width: 100%;
+}
+.h-show{
+  display: block;
+  width: 20%;
+  text-align: center;
+}
+.h-show img{
+  width: 70%;
+}
+.h-fix-gnb{
+  width:80% ;
+}
+/* .content-navi */
+.content-navi{
+  position: relative;
+  display: block;
+  height: 80px;
+  width: 1280px;
+  margin: 0 auto;
+}
+.content-tab{
+  position: relative;
+  display: block;
+  height: 100%;
+  border: 1px solid #eaedf4;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* 알림영역 */
+/* 일정표 */
